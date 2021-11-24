@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left .btn {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+}
+
+.wrap1 {
+    margin-bottom: 5px;
+}
+
+.left .btn .wrap1 a {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #b9bbbd;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.wrap-card {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px #b9bbbd;
+    padding: 20px;
+}
+
+#card-left {
+    background-color: #6e7aef;
+    margin-right: 10px;
+}
+
+#card-right {
+    background-color: #c65ac6;
+    margin-left: 10px;
+}
+
+.cirkle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.wrap-form {
+    width: 100%;
+    height: 40vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-form form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrap-form form input {
+    min-width: 50vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: 1px solid #b9bbbd;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.wrap-form form button {
+    width: 50vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: 1px solid #b9bbbd;
+    background-color: #6e7aef;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.toggle {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left .btn {
+        width: 100%;
+    }
+
+    .left .btn .wrap1 a {
+        font-size: 20px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .wrap-card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrap-form {
+        display: flex;
+        width: 100vw;
+    }
+
+    .wrap-form form input {
+        width: 90vw;
+    }
+}

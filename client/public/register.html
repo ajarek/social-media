@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/register.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container">
+        <a href="index.html" class="exit">✖️</a>
+        <header>
+            <h1>Zarejestruj się</h1>
+            <p>To szybkie i proste.</p>
+            <hr style="width: 100%;">
+        </header>
+
+        <form action="" method="post">
+
+            <div class="wrap">
+                <input type="text" name="name" id="name" placeholder="Imię" required>
+                <input type="text" name="lastname" id="lastname" placeholder="Nazwisko" required>
+            </div>
+            <div class="wrap">
+                <input type="email" name="email" id="email" placeholder="Adres e-mail" required>
+            </div>
+            <div class="wrap">
+                <input type="password" name="password" id="password" placeholder="Nowe hasło" required>
+            </div>
+
+            <div class="wrap">
+                <div class="du">Data urodzenia</div>
+            </div>
+            <div class="wrap">
+
+                <div class="wrap">
+                    <input type="number" name="day" id="day" value="20" min="1" max="31" step="1">
+                    <input type="number" name="month" id="month" value="11" min="1" max="12" step="1">
+                    <input type="number" name="year" id="year" value="2021" min="1921" max="2021" step="1">
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="du">Płeć</div>
+            </div>
+
+            <div class="wrap" id="radio">
+                <label for="women">Kobieta</label><input type="radio" name="sex" id="women" value="Kobieta"  >
+                <label for="men">Męszczyzna</label><input type="radio" name="sex" id="men" value="Męszczyzna" >
+            </div>
+
+            <div class="wrap" id="set">
+                <label for="men">Ustawienia niestandardowe</label><input type="radio" name="seting" id="seting"
+                    value="Uncheck">
+            </div>
+
+            <p>
+                Klikając przycisk Zarejestruj się, akceptujesz nasz Regulamin. Zasady dotyczące danych informują, w
+                jaki sposób gromadzimy, użytkujemy i udostępniamy dane użytkowników, a Zasady dotyczące plików
+                cookie informują jak korzystamy z plików cookie i podobnych technologii. Możesz otrzymywać
+                powiadomienia SMS z Facebooka, z których możesz zrezygnować w dowolnej chwili.
+            </p>
+
+            <div class="wrap">
+                <div class="btn">
+                    <button type="submit">Zarejestruj się</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+<script src="../src/js/register.js"></script>
+</html>
